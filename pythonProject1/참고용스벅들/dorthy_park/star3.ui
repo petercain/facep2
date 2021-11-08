@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>660</width>
+    <height>490</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextBrowser" name="textBrowser">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>230</y>
+      <width>600</width>
+      <height>241</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_home">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>90</y>
+      <width>141</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Home</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_membership">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>90</y>
+      <width>141</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Membership</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_check">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>90</y>
+      <width>151</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Check</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_remove">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>90</y>
+      <width>141</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Close Account</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_confirm">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>640</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>American Typewriter</family>
+      <pointsize>24</pointsize>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Panel</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_year">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>180</y>
+      <width>90</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>2021년</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="comboBox_month">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>180</y>
+      <width>90</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>01월</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>02월</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>03월</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>04월</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>05월</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>06월</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>07월</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>08월</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>09월</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>10월</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>11월</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>12월</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="comboBox_day">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>180</y>
+      <width>90</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>01일</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>02일</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>03일</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>04일</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>05일</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>06일</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>07일</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>08일</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>09일</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>10일</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>11일</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>12일</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>13일</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>14일</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>15일</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>16일</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>17일</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>18일</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>19일</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>20일</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>21일</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>22일</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>23일</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>24일</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>25일</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>26일</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>27일</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>28일</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>29일</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>30일</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>31일</string>
+     </property>
+    </item>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

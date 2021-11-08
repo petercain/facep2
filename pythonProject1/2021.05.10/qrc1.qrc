@@ -1,0 +1,16 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>구구.jpeg</file>
+    <file>꼬렛.jpeg</file>
+    <file>꼬리선.jpeg</file>
+    <file>꼬부기.jpeg</file>
+    <file>다운로드.png</file>
+    <file>모다피.jpeg</file>
+    <file>오박사.jpeg</file>
+    <file>이상해씨.jpeg</file>
+    <file>잉어킹.jpeg</file>
+    <file>주벳.jpeg</file>
+    <file>파이리.jpeg</file>
+    <file>피카츄.png</file>
+  </qresource>
+</RCC>

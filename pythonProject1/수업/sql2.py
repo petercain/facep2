@@ -1,0 +1,170 @@
+'''
+1번.. ALLEN과 부서가 같은 사원들의 사원명, 입사일을 출력하되 높은 급여 순으로 출력
+
+SELECT ENAME, HIREDATE
+FROM EMP
+WHERE DEPTNO = (
+SELECT DEPTNO FROM EMP WHERE ENAME like 'ALLEN')
+
+셀렉트문안에 셀렉트문 (속도가 느리다)
+
+-
+
+SELECT A.ENAME, A.HIREDATE FROM EMP AS A <ㅡ변수같은거
+INNER JOIN EMP AS B <-- 변수같은거
+on A.DEPTNO = B.DEPTNO
+WHERE B.ENAME like 'ALLEN'
+ORDER BY A.SAL DESC <--높은순
+
+셀프 조인문 활용
+
+
+2번. 가장 높은 급여를 받는 사원보다 입사일이 늦은 사원의 이름, 입사일을 출력
+
+SELECT ENAME,HIREDATE FROM EMP
+WHERE HIREDATE >
+(SELECT HIREDATE FROM EMP WHERE SAL =
+(SELECT max(SAL) FROM EMP))
+
+-
+
+SELECT A.ENAME, A.HIREDATE FROM EMP AS A
+INNER JOIN EMP AS B
+on A.HIREDATE > B.HIREDATE
+WHERE B.SAL = (SELECT max(SAL) FROM EMP)
+
+
+3번. FORD 보다 입사일이 늦은 사원 중 급여가 가장 높은 사원의 이름과 급여를 출력
+
+SELECT ENAME, SAL FROM EMP
+WHERE JOB is NOT 'PRESIDENT' AND SAL >=
+(SELECT max(sal) FROM EMP WHERE HIREDATE >
+(SELECT HIREDATE FROM EMP
+WHERE ENAME like 'FORD'))
+
+4번. 20번 부서의 최고 급여보다 많은 사원의 사원번호,사원명,급여를 출력
+
+SELECT EMPNO, ENAME, SAL FROM EMP
+WHERE SAL >
+(SELECT max(SAL) FROM EMP
+WHERE DEPTNO = 20)
+
+
+5번. EMP 테이블에서 가장 많은 사원이 속해있는
+부서번호와 사원수 출력
+
+SELECT DEPTNO,count(*) FROM EMP
+GROUP BY DEPTNO
+ORDER BY count(*) LIMIT 1
+
+#이게 되는데 여긴선 안됨
+SELECT DEPTNO,max(count(*)) FROM EMP
+GROUP BY DEPTNO
+
+6번. EMP 테이블에서 가장 많은 사원을 갖는 MGR의 사원번호 출력
+
+SELECT EMPNO, count(MGR)
+FROM emp GROUP BY MGR
+ORDER BY count(MGR) DESC
+LIMIT 1
+
+
+SELECT EMPNO FROM EMP WHERE EMPNO =
+(SELECT MGR FROM
+(SELECT MGR, MAX(MYCOUNT) FROM  --조회한 count에서 max값 다시 조회
+(SELECT EMPNO,MGR, count(*) AS MYCOUNT  --count에 별명 붙여주기
+FROM EMP GROUP bY MGR)AS RESULT))  --내가 조회한 결과내에서 다시 조회
+
+
+7번. 급여가 두 번째로 많은 급여를 받는 사원의 이름, 급여 출력
+
+SELECT ENAME, SAL FROM EMP
+ORDER BY SAL DESC LIMIT 1,2  --1에서 두개
+
+
+8번. 입사일이 두 번째로 빠른 사람의 부서명과 이름, 입사일 출력
+
+SELECT DEPT.DNAME, EMP.EMPNO, EMP.HIREDATE
+FROM EMP
+INNER JOIN DEPT
+on EMP.DEPTNO = DEPT.DEPTNO
+ORDER BY HIREDATE LIMIT 1,1
+
+
+9번. SMITH와 같은 부서에 속한 사원들의 평균 급여 보다 큰 급여를 받는 모든 사원의 사원명,급여 출력
+
+SELECT * FROM EMP WHERE SAL >
+(SELECT AVG(SAL)
+FROM EMP
+WHERE DEPTNO =
+(SELECT DEPTNO FROM EMP WHERE ENAME like 'SMITH'))
+
+
+10번. SCOTT의 급여에서 1000 을 뺀 급여보다 적게 받는 사원의 이름,급여 출력
+
+SELECT A.ENAME, A.SAL FROM EMP AS A
+INNER JOIN EMP AS B
+ON B.ENAME = 'SCOTT'
+WHERE A. SAL < B.SAL - 1000
+
+
+11번. JOB이 MANAGER인 사원들 중 최소급여를 받는 사원보다 급여가 적은 사원의 이름, 급여,부서명 출력
+
+SELECT EMP.ENAME, EMP.SAL, DEPT.DNAME FROM EMP
+INNER JOIN DEPT
+on EMP.DEPTNO = DEPT.DEPTNO
+WHERE SAL <
+(SELECT min(SAL) FROM EMP WHERE JOB is 'MANAGER')
+
+
+12번. WARD가 소속된 부서 사원들의 평균 급여보다 급여가 높은 사원의 이름 ,급여 출력
+
+SELECT ENAME, SAL FROM EMP WHERE SAL >
+(SELECT AVG(A.SAL) FROM EMP AS A
+INNER JOIN EMP AS B
+on B.ENAME like 'WARD'
+WHERE A.DEPTNO = B.DEPTNO)
+
+
+13번. FORD보다 입사일이 늦은 사원과 같은 부서서 근무하는 사원들의 부서명,이름,급여 출력
+
+SELECT DEPT.DNAME, EMP.ENAME, EMP.SAL FROM EMP
+INNER JOIN DEPT
+ON EMP.DEPTNO = DEPT.DEPTNO
+WHERE EMP.ENAME != 'FORD' AND EMP.DEPTNO IN
+(SELECT DEPTNO FROM EMP WHERE HIREDATE >
+(SELECT HIREDATE FROM EMP WHERE ENAME like 'FORD'))
+ORDER BY DNAME DESC
+
+
+14번. 커미션이 없는 사원 중 입사일이 가장 빠른 사원의 부서명, 사원명,입사일 출력
+SELECT EMP.ENAME, DEPT.DNAME, EMP.HIREDATE FROM EMP
+INNER JOIN DEPT
+on EMP.DEPTNO = DEPT.DEPTNO
+WHERE HIREDATE =
+(SELECT min(HIREDATE) FROM EMP WHERE COMM is NULL)
+
+
+15번. KING의 급여에서 SCOTT의 급여를 뺀 결과 보다 적은 급여를 받는 사원의 부서명,이름,급여 출력
+
+
+16번.  EMP 테이블에서 이름이 5글자인 사원 중 급여가 가장 높은 사원의 이름,급여,부서명 출력
+
+SELECT EMP.ENAME, max(EMP.SAL), DEPT.DNAME FROM EMP
+INNER JOIN DEPT
+on EMP.DEPTNO = DEPT.DEPTNO
+WHERE length(ENAME) = 5
+
+
+17번. CLARK이 속한 부서의 평균 급여보다 높은 급여를 받는 사원 중 입사일이 가장 빠른 사원의 부서명, 사원명, 급여 출력
+
+SELECT DEPT.DNAME, EMP.ENAME, EMP.SAL FROM DEPT
+INNER JOIN EMP
+on EMP.DEPTNO = DEPT.DEPTNO
+WHERE HIREDATE =
+(SELECT min(HIREDATE) FROM EMP WHERE SAL >
+(SELECT AVG(SAL) FROM EMP WHERE DEPTNO =
+(SELECT DEPTNO FROM EMP WHERE ENAME = 'CLARK')))
+
+
+'''

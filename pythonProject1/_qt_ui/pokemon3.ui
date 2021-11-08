@@ -1,0 +1,930 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>960</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>960</width>
+    <height>480</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>960</width>
+    <height>480</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Pokemon</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>icon/icon_pokemon96.png</normaloff>icon/icon_pokemon96.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QProgressBar" name="progressBar_mp">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>260</y>
+      <width>380</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QProgressBar{
+	background-color: rgb(187, 187, 187);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	border-style: none;
+}
+QProgressBar::chunk{
+	background-color: rgb(0, 85, 255);
+	margin: 3px;
+	border-radius: 5px;
+}</string>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="textVisible">
+     <bool>true</bool>
+    </property>
+    <property name="format">
+     <string>MP %p / 100</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_player_name">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>180</y>
+      <width>180</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+	background-color: rgb(255, 203, 5);
+	color: rgb(53, 100, 173);
+	border-color: rgb(53, 100, 173);
+	font: 10pt &quot;휴먼매직체&quot;;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Panel</enum>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_player_image">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>180</width>
+      <height>180</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="progressBar_hp">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>220</y>
+      <width>380</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QProgressBar{
+	background-color: rgb(187, 187, 187);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	border-style: none;
+}
+QProgressBar::chunk{
+	
+	background-color: rgb(255, 0, 0);
+	margin: 3px;
+	border-radius: 5px;
+}</string>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="textVisible">
+     <bool>true</bool>
+    </property>
+    <property name="invertedAppearance">
+     <bool>false</bool>
+    </property>
+    <property name="format">
+     <string>HP %p / 100</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_mypokemon">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>10</y>
+      <width>180</width>
+      <height>180</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_game_money">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>300</y>
+      <width>180</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+	background-color: rgb(255, 203, 5);
+	color: rgb(53, 100, 173);
+	border-color: rgb(53, 100, 173);
+	border-radius: 10px;
+	font: 12pt &quot;휴먼매직체&quot;;
+} </string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="lineWidth">
+     <number>1</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_buypotion">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>380</y>
+      <width>130</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-color: rgb(255, 203, 5);
+	color: rgb(53, 100, 173);
+	border-radius: 10px;
+	font: 12pt &quot;휴먼매직체&quot;;
+}
+QPushButton:hover{
+	color: rgb(0, 0, 255);
+	background-color: rgb(255, 255, 127);
+}</string>
+    </property>
+    <property name="text">
+     <string>포션 구매</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_skill">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>340</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+	color: rgb(53, 100, 173);
+	font: 14pt &quot;휴먼매직체&quot;;
+} </string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="lineWidth">
+     <number>5</number>
+    </property>
+    <property name="text">
+     <string>MY SKILL </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_inventory">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>340</y>
+      <width>160</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+	color: rgb(53, 100, 173);
+	font: 14pt &quot;휴먼매직체&quot;;
+} </string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="lineWidth">
+     <number>5</number>
+    </property>
+    <property name="text">
+     <string>MY INVENTORY</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_pokemon_name">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>180</y>
+      <width>180</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+	background-color: rgb(255, 203, 5);
+	color: rgb(53, 100, 173);
+	border-color: rgb(53, 100, 173);
+	font: 10pt &quot;휴먼매직체&quot;;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Panel</enum>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_skill1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>370</y>
+      <width>100</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>80</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Panel</enum>
+    </property>
+    <property name="lineWidth">
+     <number>5</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_skill3">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>370</y>
+      <width>100</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>80</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+	background-color: rgb(255, 203, 5);
+	color: rgb(53, 100, 173);
+	border-color: rgb(53, 100, 173);
+	font: 10pt &quot;휴먼매직체&quot;;
+} </string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Panel</enum>
+    </property>
+    <property name="lineWidth">
+     <number>5</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_skill4">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>370</y>
+      <width>100</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>80</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+	background-color: rgb(255, 203, 5);
+	color: rgb(53, 100, 173);
+	border-color: rgb(53, 100, 173);
+	font: 10pt &quot;휴먼매직체&quot;;
+} </string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Panel</enum>
+    </property>
+    <property name="lineWidth">
+     <number>5</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_skill5">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>370</y>
+      <width>100</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>80</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+	background-color: rgb(255, 203, 5);
+	color: rgb(53, 100, 173);
+	border-color: rgb(53, 100, 173);
+	font: 10pt &quot;휴먼매직체&quot;;
+} </string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Panel</enum>
+    </property>
+    <property name="lineWidth">
+     <number>5</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_hp">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>370</y>
+      <width>100</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>80</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+	background-color: rgb(255, 255, 255);
+	color: rgb(255, 0, 0);
+	font: 18pt &quot;휴먼매직체&quot;;
+} </string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Panel</enum>
+    </property>
+    <property name="lineWidth">
+     <number>5</number>
+    </property>
+    <property name="text">
+     <string>0 EA</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_skill2">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>370</y>
+      <width>100</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>80</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+	background-color: rgb(255, 203, 5);
+	color: rgb(53, 100, 173);
+	border-color: rgb(53, 100, 173);
+	font: 10pt &quot;휴먼매직체&quot;;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Panel</enum>
+    </property>
+    <property name="lineWidth">
+     <number>5</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_mp">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>370</y>
+      <width>100</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>80</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+	
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 85, 255);
+	font: 18pt &quot;휴먼매직체&quot;;
+} </string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Panel</enum>
+    </property>
+    <property name="lineWidth">
+     <number>5</number>
+    </property>
+    <property name="text">
+     <string> 0 EA</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_fight">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>220</y>
+      <width>130</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>80</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-color: rgb(53, 100, 173);
+	color: rgb(255, 203, 5);
+	border-color: rgb(53, 100, 173);
+	border-radius: 10px;
+	font: 24pt &quot;휴먼매직체&quot;;
+}
+QPushButton:hover{
+	color: rgb(255, 255, 127);
+	background-color: rgb(0, 0, 255);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>전투</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_pokemon1">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>10</y>
+      <width>180</width>
+      <height>180</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_pokemon2">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>10</y>
+      <width>180</width>
+      <height>180</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_pokemon3">
+    <property name="geometry">
+     <rect>
+      <x>770</x>
+      <y>10</y>
+      <width>180</width>
+      <height>180</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_name1">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>180</y>
+      <width>160</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+	background-color: rgb(255, 203, 5);
+	color: rgb(53, 100, 173);
+	border-color: rgb(53, 100, 173);
+	font: 10pt &quot;휴먼매직체&quot;;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Panel</enum>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string>Lv. 1</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_name2">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>180</y>
+      <width>160</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+	background-color: rgb(255, 203, 5);
+	color: rgb(53, 100, 173);
+	border-color: rgb(53, 100, 173);
+	font: 10pt &quot;휴먼매직체&quot;;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Panel</enum>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string>Lv. 2</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_name3">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>180</y>
+      <width>160</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+	background-color: rgb(255, 203, 5);
+	color: rgb(53, 100, 173);
+	border-color: rgb(53, 100, 173);
+	font: 10pt &quot;휴먼매직체&quot;;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Panel</enum>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string>Lv. 4</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_textboxtitle">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>220</y>
+      <width>380</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+	color: rgb(53, 100, 173);
+	font: 14pt &quot;휴먼매직체&quot;;
+} </string>
+    </property>
+    <property name="text">
+     <string>Tip or something else</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_esc">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>430</y>
+      <width>130</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-color: rgb(255, 203, 5);
+	color: rgb(53, 100, 173);
+	border-color: rgb(53, 100, 173);
+	border-radius: 10px;
+	font: 12pt &quot;휴먼매직체&quot;;
+}</string>
+    </property>
+    <property name="text">
+     <string>종료</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_ex">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>300</y>
+      <width>180</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+	background-color: rgb(255, 203, 5);
+	color: rgb(53, 100, 173);
+	border-color: rgb(53, 100, 173);
+	border-radius: 10px;
+	font: 12pt &quot;휴먼매직체&quot;;
+} </string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="lineWidth">
+     <number>1</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_book">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>330</y>
+      <width>130</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-color: rgb(255, 203, 5);
+	color: rgb(53, 100, 173);
+	border-radius: 10px;
+	font: 12pt &quot;휴먼매직체&quot;;
+}
+QPushButton:hover{
+	color: rgb(0, 0, 255);
+	background-color: rgb(255, 255, 127);
+}</string>
+    </property>
+    <property name="text">
+     <string>몬스터 도감</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>250</y>
+      <width>380</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+font: 9pt &quot;휴먼매직체&quot;;
+color: rgb(53, 100, 173);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Panel</enum>
+    </property>
+    <property name="lineWidth">
+     <number>5</number>
+    </property>
+    <property name="text">
+     <string>준비 중...</string>
+    </property>
+   </widget>
+   <zorder>progressBar_mp</zorder>
+   <zorder>label_player_image</zorder>
+   <zorder>progressBar_hp</zorder>
+   <zorder>label_mypokemon</zorder>
+   <zorder>label_game_money</zorder>
+   <zorder>pushButton_buypotion</zorder>
+   <zorder>label_skill</zorder>
+   <zorder>label_inventory</zorder>
+   <zorder>label_pokemon_name</zorder>
+   <zorder>label_skill1</zorder>
+   <zorder>label_skill3</zorder>
+   <zorder>label_skill4</zorder>
+   <zorder>label_skill5</zorder>
+   <zorder>label_hp</zorder>
+   <zorder>label_skill2</zorder>
+   <zorder>label_mp</zorder>
+   <zorder>label_pokemon1</zorder>
+   <zorder>label_pokemon2</zorder>
+   <zorder>label_pokemon3</zorder>
+   <zorder>label_name1</zorder>
+   <zorder>label_name2</zorder>
+   <zorder>label_name3</zorder>
+   <zorder>label_textboxtitle</zorder>
+   <zorder>pushButton_esc</zorder>
+   <zorder>label_player_name</zorder>
+   <zorder>pushButton_fight</zorder>
+   <zorder>label_ex</zorder>
+   <zorder>pushButton_book</zorder>
+   <zorder>label</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

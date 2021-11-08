@@ -1,0 +1,4308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>958</width>
+    <height>792</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::RightToLeft</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>0</y>
+      <width>750</width>
+      <height>761</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>10</width>
+      <height>10</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>American Typewriter</family>
+      <pointsize>48</pointsize>
+      <italic>false</italic>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTabBar:tab {
+height: 100px; width: 165
+px;
+}</string>
+    </property>
+    <property name="tabPosition">
+     <enum>QTabWidget::South</enum>
+    </property>
+    <property name="currentIndex">
+     <number>2</number>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+    <widget class="QWidget" name="tab_home">
+     <attribute name="title">
+      <string>HOME</string>
+     </attribute>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>721</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>American Typewriter</family>
+        <pointsize>64</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Welcome to starbucks</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Btn_1">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>110</y>
+        <width>191</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../today2.png</normaloff>../today2.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>461</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Herculanum</family>
+        <pointsize>24</pointsize>
+        <italic>true</italic>
+       </font>
+      </property>
+      <property name="text">
+       <string>도로시님을 위한 추천메뉴</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="new_btn">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>320</y>
+        <width>530</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>American Typewriter</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>What's new</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Btn_2">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>110</y>
+        <width>181</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../jhb.png</normaloff>../jhb.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>200</width>
+        <height>200</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Btn_3">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>110</y>
+        <width>181</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../jymmcf.png</normaloff>../jymmcf.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>200</width>
+        <height>200</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Btn_4">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>110</y>
+        <width>181</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../ame.png</normaloff>../ame.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>200</width>
+        <height>200</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>290</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Papyrus</family>
+        <pointsize>18</pointsize>
+        <italic>false</italic>
+       </font>
+      </property>
+      <property name="text">
+       <string>오늘의 커피</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>290</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Papyrus</family>
+        <pointsize>18</pointsize>
+        <italic>false</italic>
+       </font>
+      </property>
+      <property name="text">
+       <string>허니 자몽 블랙티</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>290</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Papyrus</family>
+        <pointsize>18</pointsize>
+        <italic>false</italic>
+       </font>
+      </property>
+      <property name="text">
+       <string>유기농 말차 프라푸치노</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>290</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Papyrus</family>
+        <pointsize>18</pointsize>
+        <italic>false</italic>
+       </font>
+      </property>
+      <property name="text">
+       <string>아메리카노</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="reward_btn">
+      <property name="geometry">
+       <rect>
+        <x>12</x>
+        <y>410</y>
+        <width>530</width>
+        <height>201</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../reward.png</normaloff>../reward.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>550</width>
+        <height>400</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="summer_btn">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>320</y>
+        <width>180</width>
+        <height>291</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../../../../../../Desktop/코딩/방학숙제/starbucks kiosk/PYQT5/starbucks image/new.png</normaloff>../../../../../../Desktop/코딩/방학숙제/starbucks kiosk/PYQT5/starbucks image/new.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>150</width>
+        <height>280</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_order">
+     <attribute name="title">
+      <string>Order</string>
+     </attribute>
+     <widget class="QTabWidget" name="tabWidget_drink_and_food">
+      <property name="geometry">
+       <rect>
+        <x>-10</x>
+        <y>50</y>
+        <width>750</width>
+        <height>661</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>American Typewriter</family>
+        <pointsize>36</pointsize>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;음료&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTabBar:tab {
+min-width: 7em; min-height: 15ex;
+}</string>
+      </property>
+      <property name="tabPosition">
+       <enum>QTabWidget::North</enum>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <property name="elideMode">
+       <enum>Qt::ElideLeft</enum>
+      </property>
+      <property name="tabsClosable">
+       <bool>false</bool>
+      </property>
+      <property name="movable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="tab_drink">
+       <attribute name="title">
+        <string>음료</string>
+       </attribute>
+       <widget class="QToolBox" name="tool_drink">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>690</width>
+          <height>591</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>American Typewriter</family>
+          <pointsize>24</pointsize>
+         </font>
+        </property>
+        <property name="currentIndex">
+         <number>4</number>
+        </property>
+        <widget class="QWidget" name="page_drink_new">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>100</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <attribute name="label">
+          <string>NEW</string>
+         </attribute>
+         <widget class="QPushButton" name="Btn_5">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>-10</y>
+            <width>130</width>
+            <height>130</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../rrci.png</normaloff>../rrci.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Btn_7">
+          <property name="geometry">
+           <rect>
+            <x>530</x>
+            <y>-10</y>
+            <width>130</width>
+            <height>130</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../../../../../../Desktop/코딩/방학숙제/starbucks kiosk/PYQT5/starbucks image/rgl.png</normaloff>../../../../../../Desktop/코딩/방학숙제/starbucks kiosk/PYQT5/starbucks image/rgl.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Btn_10">
+          <property name="geometry">
+           <rect>
+            <x>530</x>
+            <y>160</y>
+            <width>130</width>
+            <height>130</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../tspb.png</normaloff>../tspb.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Btn_8">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>160</y>
+            <width>130</width>
+            <height>130</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../ibcb.png</normaloff>../ibcb.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Btn_6">
+          <property name="geometry">
+           <rect>
+            <x>340</x>
+            <y>-10</y>
+            <width>130</width>
+            <height>130</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../../../../../../Desktop/코딩/방학숙제/starbucks kiosk/PYQT5/starbucks image/jgb.png</normaloff>../../../../../../Desktop/코딩/방학숙제/starbucks kiosk/PYQT5/starbucks image/jgb.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Btn_9">
+          <property name="geometry">
+           <rect>
+            <x>340</x>
+            <y>160</y>
+            <width>130</width>
+            <height>130</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../iyyb.png</normaloff>../iyyb.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_47">
+          <property name="geometry">
+           <rect>
+            <x>550</x>
+            <y>120</y>
+            <width>141</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>루프탑 그레이 라떼</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_48">
+          <property name="geometry">
+           <rect>
+            <x>520</x>
+            <y>300</y>
+            <width>151</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>트윙클 스타 핑크 블렌디드</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_52">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>120</y>
+            <width>171</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>루비 레드 칠링 아이스티</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_49">
+          <property name="geometry">
+           <rect>
+            <x>350</x>
+            <y>120</y>
+            <width>151</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>제스트 그린 블렌디드</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_50">
+          <property name="geometry">
+           <rect>
+            <x>340</x>
+            <y>300</y>
+            <width>191</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>아이스 유자 &amp; 유자베리 티 </string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_51">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>300</y>
+            <width>201</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>아이스크림 블렌딩 콜드브루</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_65">
+          <property name="geometry">
+           <rect>
+            <x>190</x>
+            <y>140</y>
+            <width>51</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>8300원</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_66">
+          <property name="geometry">
+           <rect>
+            <x>390</x>
+            <y>140</y>
+            <width>51</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>8600원</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_67">
+          <property name="geometry">
+           <rect>
+            <x>580</x>
+            <y>140</y>
+            <width>51</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>8500원</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_68">
+          <property name="geometry">
+           <rect>
+            <x>190</x>
+            <y>320</y>
+            <width>51</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>6600원</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_69">
+          <property name="geometry">
+           <rect>
+            <x>380</x>
+            <y>320</y>
+            <width>51</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>5900원</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_70">
+          <property name="geometry">
+           <rect>
+            <x>570</x>
+            <y>320</y>
+            <width>51</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>6300원</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page_jeju">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>100</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <attribute name="label">
+          <string>추천 (Only JEJU)</string>
+         </attribute>
+         <widget class="QPushButton" name="Btn_13">
+          <property name="geometry">
+           <rect>
+            <x>530</x>
+            <y>0</y>
+            <width>130</width>
+            <height>130</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../jejubddp.png</normaloff>../jejubddp.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Btn_12">
+          <property name="geometry">
+           <rect>
+            <x>340</x>
+            <y>0</y>
+            <width>130</width>
+            <height>130</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../sscp.png</normaloff>../sscp.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Btn_14">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>170</y>
+            <width>130</width>
+            <height>130</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../../../../../../Desktop/코딩/방학숙제/starbucks kiosk/PYQT5/starbucks image/jejuchbb.png</normaloff>../../../../../../Desktop/코딩/방학숙제/starbucks kiosk/PYQT5/starbucks image/jejuchbb.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Btn_16">
+          <property name="geometry">
+           <rect>
+            <x>530</x>
+            <y>170</y>
+            <width>130</width>
+            <height>130</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../../../../../../Downloads/star2/jejubddl.png</normaloff>../../../../../../Downloads/star2/jejubddl.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Btn_15">
+          <property name="geometry">
+           <rect>
+            <x>340</x>
+            <y>170</y>
+            <width>130</width>
+            <height>130</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../jejuclemo.png</normaloff>../jejuclemo.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Btn_11">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>0</y>
+            <width>130</width>
+            <height>130</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../jejubcp.png</normaloff>../jejubcp.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_21">
+          <property name="geometry">
+           <rect>
+            <x>360</x>
+            <y>130</y>
+            <width>131</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>쑥떡 크림 프라푸치노</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_76">
+          <property name="geometry">
+           <rect>
+            <x>160</x>
+            <y>310</y>
+            <width>131</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>천혜향 블랙티 블렌디드</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_29">
+          <property name="geometry">
+           <rect>
+            <x>160</x>
+            <y>130</y>
+            <width>141</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>제주까망 크림 프라푸치노</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_78">
+          <property name="geometry">
+           <rect>
+            <x>550</x>
+            <y>310</y>
+            <width>131</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>별다방 땅콩 라떼</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_22">
+          <property name="geometry">
+           <rect>
+            <x>360</x>
+            <y>310</y>
+            <width>131</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>제주 청귤 레모네이드</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_85">
+          <property name="geometry">
+           <rect>
+            <x>540</x>
+            <y>130</y>
+            <width>141</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>별다방 땅콩 프라푸치노</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_71">
+          <property name="geometry">
+           <rect>
+            <x>570</x>
+            <y>150</y>
+            <width>51</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>7500원</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_72">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>330</y>
+            <width>51</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>7500원</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_73">
+          <property name="geometry">
+           <rect>
+            <x>380</x>
+            <y>150</y>
+            <width>51</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>7500원</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_92">
+          <property name="geometry">
+           <rect>
+            <x>370</x>
+            <y>330</y>
+            <width>51</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>7000원</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_93">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>150</y>
+            <width>51</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>7500원</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_94">
+          <property name="geometry">
+           <rect>
+            <x>560</x>
+            <y>330</y>
+            <width>51</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>7200원</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page_drink3">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>100</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <attribute name="label">
+          <string>에스프레소</string>
+         </attribute>
+         <widget class="QPushButton" name="Btn_18">
+          <property name="geometry">
+           <rect>
+            <x>330</x>
+            <y>-2</y>
+            <width>130</width>
+            <height>130</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../../../../../../Desktop/코딩/방학숙제/starbucks kiosk/PYQT5/starbucks image/cl.png</normaloff>../../../../../../Desktop/코딩/방학숙제/starbucks kiosk/PYQT5/starbucks image/cl.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Btn_19">
+          <property name="geometry">
+           <rect>
+            <x>520</x>
+            <y>-2</y>
+            <width>130</width>
+            <height>130</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../../../../../../Desktop/코딩/방학숙제/starbucks kiosk/PYQT5/starbucks image/cm.png</normaloff>../../../../../../Desktop/코딩/방학숙제/starbucks kiosk/PYQT5/starbucks image/cm.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Btn_21">
+          <property name="geometry">
+           <rect>
+            <x>330</x>
+            <y>170</y>
+            <width>130</width>
+            <height>130</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../vfw.png</normaloff>../vfw.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Btn_20">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>170</y>
+            <width>130</width>
+            <height>130</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../../../../../../Desktop/코딩/방학숙제/starbucks kiosk/PYQT5/starbucks image/dl.png</normaloff>../../../../../../Desktop/코딩/방학숙제/starbucks kiosk/PYQT5/starbucks image/dl.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Btn_22">
+          <property name="geometry">
+           <rect>
+            <x>520</x>
+            <y>170</y>
+            <width>130</width>
+            <height>130</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../../../../../../Desktop/코딩/방학숙제/starbucks kiosk/PYQT5/starbucks image/today2.png</normaloff>../../../../../../Desktop/코딩/방학숙제/starbucks kiosk/PYQT5/starbucks image/today2.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_18">
+          <property name="geometry">
+           <rect>
+            <x>360</x>
+            <y>130</y>
+            <width>111</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string> 카페 라떼</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_55">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>300</y>
+            <width>81</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>돌체 라떼</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_19">
+          <property name="geometry">
+           <rect>
+            <x>560</x>
+            <y>130</y>
+            <width>101</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>카페 모카</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_20">
+          <property name="geometry">
+           <rect>
+            <x>170</x>
+            <y>130</y>
+            <width>111</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>아메리카노</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_74">
+          <property name="geometry">
+           <rect>
+            <x>530</x>
+            <y>300</y>
+            <width>131</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>디카페인 아메리카노</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_75">
+          <property name="geometry">
+           <rect>
+            <x>340</x>
+            <y>300</y>
+            <width>111</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>바닐라 플랫 화이트</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Btn_17">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>-2</y>
+            <width>130</width>
+            <height>130</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../ame.png</normaloff>../ame.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_101">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>320</y>
+            <width>51</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>5600원</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_102">
+          <property name="geometry">
+           <rect>
+            <x>370</x>
+            <y>150</y>
+            <width>51</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>4600원</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_103">
+          <property name="geometry">
+           <rect>
+            <x>560</x>
+            <y>320</y>
+            <width>51</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>4400원</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_104">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>150</y>
+            <width>51</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>4100원</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_105">
+          <property name="geometry">
+           <rect>
+            <x>370</x>
+            <y>320</y>
+            <width>51</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>5600원</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_106">
+          <property name="geometry">
+           <rect>
+            <x>560</x>
+            <y>150</y>
+            <width>51</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>5100원</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page_drink4">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>100</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <attribute name="label">
+          <string>프라푸치노</string>
+         </attribute>
+         <widget class="QPushButton" name="Btn_24">
+          <property name="geometry">
+           <rect>
+            <x>330</x>
+            <y>0</y>
+            <width>130</width>
+            <height>130</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../../../../../../Downloads/star2/javap.png</normaloff>../../../../../../Downloads/star2/javap.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Btn_25">
+          <property name="geometry">
+           <rect>
+            <x>520</x>
+            <y>0</y>
+            <width>130</width>
+            <height>130</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../../../../../../Desktop/코딩/방학숙제/starbucks kiosk/PYQT5/starbucks image/wtp.png</normaloff>../../../../../../Desktop/코딩/방학숙제/starbucks kiosk/PYQT5/starbucks image/wtp.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Btn_27">
+          <property name="geometry">
+           <rect>
+            <x>330</x>
+            <y>170</y>
+            <width>130</width>
+            <height>130</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../ddyb.png</normaloff>../ddyb.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Btn_26">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>170</y>
+            <width>130</width>
+            <height>130</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../cp.png</normaloff>../cp.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Btn_28">
+          <property name="geometry">
+           <rect>
+            <x>520</x>
+            <y>170</y>
+            <width>130</width>
+            <height>130</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../../../../../../Desktop/코딩/방학숙제/starbucks kiosk/PYQT5/starbucks image/mokap.png</normaloff>../../../../../../Desktop/코딩/방학숙제/starbucks kiosk/PYQT5/starbucks image/mokap.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Btn_23">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>0</y>
+            <width>130</width>
+            <height>130</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../jymmcf.png</normaloff>../jymmcf.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_23">
+          <property name="geometry">
+           <rect>
+            <x>360</x>
+            <y>130</y>
+            <width>111</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>자바칩 프라푸치노</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_79">
+          <property name="geometry">
+           <rect>
+            <x>160</x>
+            <y>300</y>
+            <width>111</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>카라멜 프라푸치노</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_24">
+          <property name="geometry">
+           <rect>
+            <x>530</x>
+            <y>130</y>
+            <width>141</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>화이트 타이거 프라푸치노</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_80">
+          <property name="geometry">
+           <rect>
+            <x>330</x>
+            <y>300</y>
+            <width>161</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>화이트 딸기 크림 프라푸치노</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_25">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>130</y>
+            <width>161</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>유기농 말차 크림 프라푸치노</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_81">
+          <property name="geometry">
+           <rect>
+            <x>550</x>
+            <y>300</y>
+            <width>131</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>모카 프라푸치노</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_107">
+          <property name="geometry">
+           <rect>
+            <x>560</x>
+            <y>320</y>
+            <width>51</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>5600원</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_108">
+          <property name="geometry">
+           <rect>
+            <x>370</x>
+            <y>320</y>
+            <width>51</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>6100원</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_109">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>150</y>
+            <width>51</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>6300원</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_110">
+          <property name="geometry">
+           <rect>
+            <x>560</x>
+            <y>150</y>
+            <width>51</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>6500원</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_111">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>320</y>
+            <width>51</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>5600원</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_112">
+          <property name="geometry">
+           <rect>
+            <x>370</x>
+            <y>150</y>
+            <width>51</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>6100원</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page_drink5">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>100</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <attribute name="label">
+          <string>블렌디드</string>
+         </attribute>
+         <widget class="QPushButton" name="Btn_30">
+          <property name="geometry">
+           <rect>
+            <x>340</x>
+            <y>0</y>
+            <width>130</width>
+            <height>130</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../../../../../../Downloads/star2/ddyb.png</normaloff>../../../../../../Downloads/star2/ddyb.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Btn_31">
+          <property name="geometry">
+           <rect>
+            <x>530</x>
+            <y>0</y>
+            <width>130</width>
+            <height>130</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../../../../../../Desktop/코딩/방학숙제/starbucks kiosk/PYQT5/starbucks image/mbb.png</normaloff>../../../../../../Desktop/코딩/방학숙제/starbucks kiosk/PYQT5/starbucks image/mbb.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Btn_33">
+          <property name="geometry">
+           <rect>
+            <x>340</x>
+            <y>170</y>
+            <width>130</width>
+            <height>130</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../../../../../../Desktop/코딩/방학숙제/starbucks kiosk/PYQT5/starbucks image/jgb.png</normaloff>../../../../../../Desktop/코딩/방학숙제/starbucks kiosk/PYQT5/starbucks image/jgb.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Btn_32">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>170</y>
+            <width>130</width>
+            <height>130</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../mppb.png</normaloff>../mppb.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Btn_34">
+          <property name="geometry">
+           <rect>
+            <x>530</x>
+            <y>170</y>
+            <width>130</width>
+            <height>130</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../../../../../../Desktop/코딩/방학숙제/starbucks kiosk/PYQT5/starbucks image/tspb.png</normaloff>../../../../../../Desktop/코딩/방학숙제/starbucks kiosk/PYQT5/starbucks image/tspb.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_26">
+          <property name="geometry">
+           <rect>
+            <x>340</x>
+            <y>130</y>
+            <width>171</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>딸기 딜라이트 요거트 블렌디드</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_82">
+          <property name="geometry">
+           <rect>
+            <x>160</x>
+            <y>300</y>
+            <width>141</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>망고 패션 프루트 블렌디드</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_27">
+          <property name="geometry">
+           <rect>
+            <x>550</x>
+            <y>130</y>
+            <width>131</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>망고 바나나 블렌디드</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_28">
+          <property name="geometry">
+           <rect>
+            <x>160</x>
+            <y>130</y>
+            <width>131</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>민트 초콜릿칩 블렌디드</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Btn_29">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>0</y>
+            <width>130</width>
+            <height>130</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../../../../../../Downloads/star2/mccb.png</normaloff>../../../../../../Downloads/star2/mccb.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_53">
+          <property name="geometry">
+           <rect>
+            <x>360</x>
+            <y>300</y>
+            <width>151</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>제스트 그린 블렌디드</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_54">
+          <property name="geometry">
+           <rect>
+            <x>530</x>
+            <y>300</y>
+            <width>151</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>트윙클 스타 핑크 블렌디드</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_113">
+          <property name="geometry">
+           <rect>
+            <x>190</x>
+            <y>320</y>
+            <width>51</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>5000원</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_114">
+          <property name="geometry">
+           <rect>
+            <x>380</x>
+            <y>150</y>
+            <width>51</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>6100원</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_115">
+          <property name="geometry">
+           <rect>
+            <x>190</x>
+            <y>150</y>
+            <width>51</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>6100원</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_116">
+          <property name="geometry">
+           <rect>
+            <x>570</x>
+            <y>150</y>
+            <width>51</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>6300원</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_117">
+          <property name="geometry">
+           <rect>
+            <x>380</x>
+            <y>320</y>
+            <width>51</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>8600원</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_118">
+          <property name="geometry">
+           <rect>
+            <x>570</x>
+            <y>320</y>
+            <width>51</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>6300원</string>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_food">
+       <attribute name="title">
+        <string>푸드</string>
+       </attribute>
+       <widget class="QToolBox" name="tool_food">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>20</y>
+          <width>690</width>
+          <height>580</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>American Typewriter</family>
+          <pointsize>24</pointsize>
+         </font>
+        </property>
+        <property name="currentIndex">
+         <number>3</number>
+        </property>
+        <widget class="QWidget" name="page_food_new">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>100</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <attribute name="label">
+          <string>NEW</string>
+         </attribute>
+         <widget class="QPushButton" name="Btn_35">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>0</y>
+            <width>130</width>
+            <height>130</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../bccc.png</normaloff>../bccc.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Btn_37">
+          <property name="geometry">
+           <rect>
+            <x>530</x>
+            <y>0</y>
+            <width>130</width>
+            <height>130</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../bddb.png</normaloff>../bddb.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Btn_40">
+          <property name="geometry">
+           <rect>
+            <x>530</x>
+            <y>180</y>
+            <width>130</width>
+            <height>130</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../djws.png</normaloff>../djws.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Btn_38">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>180</y>
+            <width>130</width>
+            <height>130</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../../../../../../Desktop/코딩/방학숙제/starbucks kiosk/PYQT5/starbucks image/ssmsb.png</normaloff>../../../../../../Desktop/코딩/방학숙제/starbucks kiosk/PYQT5/starbucks image/ssmsb.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Btn_36">
+          <property name="geometry">
+           <rect>
+            <x>340</x>
+            <y>0</y>
+            <width>130</width>
+            <height>130</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../../../../../../Desktop/코딩/방학숙제/starbucks kiosk/PYQT5/starbucks image/heyb.png</normaloff>../../../../../../Desktop/코딩/방학숙제/starbucks kiosk/PYQT5/starbucks image/heyb.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Btn_39">
+          <property name="geometry">
+           <rect>
+            <x>340</x>
+            <y>180</y>
+            <width>130</width>
+            <height>130</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../jejunsl.png</normaloff>../jejunsl.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_56">
+          <property name="geometry">
+           <rect>
+            <x>540</x>
+            <y>130</y>
+            <width>141</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>밤콩 달콩 두유 브레드</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_57">
+          <property name="geometry">
+           <rect>
+            <x>540</x>
+            <y>310</y>
+            <width>151</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>돌코롬 쫍지롱 와플샌드</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_58">
+          <property name="geometry">
+           <rect>
+            <x>160</x>
+            <y>130</y>
+            <width>171</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>블루베리 치즈 케이크</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_59">
+          <property name="geometry">
+           <rect>
+            <x>350</x>
+            <y>130</y>
+            <width>151</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>헤이즐럿 브라우니</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_60">
+          <property name="geometry">
+           <rect>
+            <x>340</x>
+            <y>310</y>
+            <width>191</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>(제주) 녹차 생크림 롤</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_61">
+          <property name="geometry">
+           <rect>
+            <x>160</x>
+            <y>310</y>
+            <width>201</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>샤인 머스캣 스윗박스</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_95">
+          <property name="geometry">
+           <rect>
+            <x>190</x>
+            <y>150</y>
+            <width>51</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>6900원</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_96">
+          <property name="geometry">
+           <rect>
+            <x>380</x>
+            <y>150</y>
+            <width>51</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>3500원</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_97">
+          <property name="geometry">
+           <rect>
+            <x>570</x>
+            <y>150</y>
+            <width>51</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>4500원</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_98">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>330</y>
+            <width>51</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>7900원</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_99">
+          <property name="geometry">
+           <rect>
+            <x>380</x>
+            <y>330</y>
+            <width>51</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>7500원</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_100">
+          <property name="geometry">
+           <rect>
+            <x>570</x>
+            <y>330</y>
+            <width>51</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>7800원</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page_9">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>100</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <attribute name="label">
+          <string>추천 </string>
+         </attribute>
+         <widget class="QPushButton" name="Btn_43">
+          <property name="geometry">
+           <rect>
+            <x>530</x>
+            <y>0</y>
+            <width>130</width>
+            <height>130</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../../../../../../Downloads/star4/bccc.png</normaloff>../../../../../../Downloads/star4/bccc.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>130</width>
+            <height>130</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Btn_42">
+          <property name="geometry">
+           <rect>
+            <x>340</x>
+            <y>0</y>
+            <width>130</width>
+            <height>130</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>lcbs.png</normaloff>lcbs.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>130</width>
+            <height>130</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Btn_44">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>180</y>
+            <width>130</width>
+            <height>130</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>tccm.png</normaloff>tccm.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>130</width>
+            <height>130</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Btn_46">
+          <property name="geometry">
+           <rect>
+            <x>530</x>
+            <y>180</y>
+            <width>130</width>
+            <height>130</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>tms.png</normaloff>tms.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>130</width>
+            <height>130</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Btn_45">
+          <property name="geometry">
+           <rect>
+            <x>340</x>
+            <y>180</y>
+            <width>130</width>
+            <height>130</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../../../../../../Desktop/코딩/방학숙제/starbucks kiosk/PYQT5/starbucks image/star4 (1)/bsc.png</normaloff>../../../../../../Desktop/코딩/방학숙제/starbucks kiosk/PYQT5/starbucks image/star4 (1)/bsc.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>130</width>
+            <height>130</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Btn_41">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>0</y>
+            <width>130</width>
+            <height>130</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../../../../../../Desktop/코딩/방학숙제/starbucks kiosk/PYQT5/starbucks image/star4 (1)/bct.png</normaloff>../../../../../../Desktop/코딩/방학숙제/starbucks kiosk/PYQT5/starbucks image/star4 (1)/bct.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>130</width>
+            <height>130</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_30">
+          <property name="geometry">
+           <rect>
+            <x>340</x>
+            <y>130</y>
+            <width>131</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>리코타 치즈 바게트 샌드위치</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_77">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>310</y>
+            <width>151</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>트리플 치즈 크로크 무슈</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_31">
+          <property name="geometry">
+           <rect>
+            <x>170</x>
+            <y>130</y>
+            <width>141</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>베이컨 치즈 토스트</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_83">
+          <property name="geometry">
+           <rect>
+            <x>540</x>
+            <y>310</y>
+            <width>131</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>튜나 멜트 샌드위치</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_32">
+          <property name="geometry">
+           <rect>
+            <x>340</x>
+            <y>310</y>
+            <width>141</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>부드러운 생크림 카스텔라</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_86">
+          <property name="geometry">
+           <rect>
+            <x>530</x>
+            <y>130</y>
+            <width>161</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>바베큐 치킨 치즈 치아바타</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_119">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>330</y>
+            <width>51</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>5200원</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_120">
+          <property name="geometry">
+           <rect>
+            <x>190</x>
+            <y>150</y>
+            <width>51</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>4900원</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_121">
+          <property name="geometry">
+           <rect>
+            <x>570</x>
+            <y>150</y>
+            <width>51</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>5800원</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_122">
+          <property name="geometry">
+           <rect>
+            <x>380</x>
+            <y>330</y>
+            <width>51</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>4500원</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_123">
+          <property name="geometry">
+           <rect>
+            <x>570</x>
+            <y>330</y>
+            <width>51</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>5900원</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_124">
+          <property name="geometry">
+           <rect>
+            <x>380</x>
+            <y>150</y>
+            <width>51</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>6200원</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page_10">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>100</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <attribute name="label">
+          <string>브레드</string>
+         </attribute>
+         <widget class="QPushButton" name="Btn_48">
+          <property name="geometry">
+           <rect>
+            <x>330</x>
+            <y>0</y>
+            <width>130</width>
+            <height>130</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>cs.png</normaloff>cs.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>130</width>
+            <height>130</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Btn_49">
+          <property name="geometry">
+           <rect>
+            <x>520</x>
+            <y>0</y>
+            <width>130</width>
+            <height>130</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>ymm.png</normaloff>ymm.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>130</width>
+            <height>130</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Btn_51">
+          <property name="geometry">
+           <rect>
+            <x>330</x>
+            <y>170</y>
+            <width>130</width>
+            <height>130</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../../../../../../Desktop/코딩/방학숙제/starbucks kiosk/PYQT5/starbucks image/star4 (1)/angnb.png</normaloff>../../../../../../Desktop/코딩/방학숙제/starbucks kiosk/PYQT5/starbucks image/star4 (1)/angnb.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>130</width>
+            <height>130</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Btn_50">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>170</y>
+            <width>130</width>
+            <height>130</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../../../../../../Downloads/star4/fc.png</normaloff>../../../../../../Downloads/star4/fc.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>130</width>
+            <height>130</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_33">
+          <property name="geometry">
+           <rect>
+            <x>350</x>
+            <y>130</y>
+            <width>111</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>클래식 스콘</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_62">
+          <property name="geometry">
+           <rect>
+            <x>160</x>
+            <y>300</y>
+            <width>101</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>프렌치 크로아상</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_34">
+          <property name="geometry">
+           <rect>
+            <x>550</x>
+            <y>130</y>
+            <width>101</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>연유 밀크모닝</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_35">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>130</y>
+            <width>141</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>리얼 블루베리 베이글</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_84">
+          <property name="geometry">
+           <rect>
+            <x>500</x>
+            <y>300</y>
+            <width>161</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>우유를 품은 초콜릿 크로와상</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_87">
+          <property name="geometry">
+           <rect>
+            <x>340</x>
+            <y>300</y>
+            <width>111</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>(제주)앙녹차 베이글</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Btn_47">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>0</y>
+            <width>130</width>
+            <height>130</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../../../../../../Downloads/star4/rbb.png</normaloff>../../../../../../Downloads/star4/rbb.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>130</width>
+            <height>130</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Btn_52">
+          <property name="geometry">
+           <rect>
+            <x>520</x>
+            <y>170</y>
+            <width>130</width>
+            <height>130</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>ypcc.png</normaloff>ypcc.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>130</width>
+            <height>130</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_125">
+          <property name="geometry">
+           <rect>
+            <x>170</x>
+            <y>320</y>
+            <width>51</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>3200원</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_126">
+          <property name="geometry">
+           <rect>
+            <x>370</x>
+            <y>150</y>
+            <width>51</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>3300원</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_127">
+          <property name="geometry">
+           <rect>
+            <x>560</x>
+            <y>320</y>
+            <width>51</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>4900원</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_128">
+          <property name="geometry">
+           <rect>
+            <x>370</x>
+            <y>320</y>
+            <width>51</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>4900원</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_129">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>150</y>
+            <width>51</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>3000원</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_130">
+          <property name="geometry">
+           <rect>
+            <x>560</x>
+            <y>150</y>
+            <width>51</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>4300원</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page_11">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>690</width>
+           <height>364</height>
+          </rect>
+         </property>
+         <attribute name="label">
+          <string>케이크</string>
+         </attribute>
+         <widget class="QLabel" name="label_36">
+          <property name="geometry">
+           <rect>
+            <x>350</x>
+            <y>130</y>
+            <width>131</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>진한 녹차 생크림 케이크</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_88">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>300</y>
+            <width>161</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>레드 벨벳 크림치즈 케이크</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_37">
+          <property name="geometry">
+           <rect>
+            <x>550</x>
+            <y>130</y>
+            <width>141</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>번트 치즈 케이크</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_89">
+          <property name="geometry">
+           <rect>
+            <x>360</x>
+            <y>300</y>
+            <width>161</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>당근 현무암케이크</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_38">
+          <property name="geometry">
+           <rect>
+            <x>160</x>
+            <y>130</y>
+            <width>161</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>부드러운 티라미수 롤</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_90">
+          <property name="geometry">
+           <rect>
+            <x>520</x>
+            <y>300</y>
+            <width>161</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>새코롬 돌코롬 한라봉 케이크</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Btn_54">
+          <property name="geometry">
+           <rect>
+            <x>340</x>
+            <y>0</y>
+            <width>130</width>
+            <height>130</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>jnsc.png</normaloff>jnsc.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>130</width>
+            <height>130</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Btn_55">
+          <property name="geometry">
+           <rect>
+            <x>530</x>
+            <y>0</y>
+            <width>130</width>
+            <height>130</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>bcc.png</normaloff>bcc.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>130</width>
+            <height>130</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Btn_58">
+          <property name="geometry">
+           <rect>
+            <x>530</x>
+            <y>170</y>
+            <width>130</width>
+            <height>130</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../../../../../../Desktop/코딩/방학숙제/starbucks kiosk/PYQT5/starbucks image/star4 (1)/sdhc.png</normaloff>../../../../../../Desktop/코딩/방학숙제/starbucks kiosk/PYQT5/starbucks image/star4 (1)/sdhc.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>130</width>
+            <height>130</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Btn_53">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>0</y>
+            <width>130</width>
+            <height>130</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../../../../../../Desktop/코딩/방학숙제/starbucks kiosk/PYQT5/starbucks image/star4 (1)/btr.png</normaloff>../../../../../../Desktop/코딩/방학숙제/starbucks kiosk/PYQT5/starbucks image/star4 (1)/btr.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>130</width>
+            <height>130</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Btn_57">
+          <property name="geometry">
+           <rect>
+            <x>340</x>
+            <y>170</y>
+            <width>130</width>
+            <height>130</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>dhc.png</normaloff>dhc.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>130</width>
+            <height>130</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Btn_56">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>170</y>
+            <width>130</width>
+            <height>130</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>rccc.png</normaloff>rccc.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>130</width>
+            <height>130</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_186">
+          <property name="geometry">
+           <rect>
+            <x>190</x>
+            <y>150</y>
+            <width>51</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>5900원</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_187">
+          <property name="geometry">
+           <rect>
+            <x>570</x>
+            <y>150</y>
+            <width>51</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>6900원</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_188">
+          <property name="geometry">
+           <rect>
+            <x>570</x>
+            <y>320</y>
+            <width>51</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>6500원</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_189">
+          <property name="geometry">
+           <rect>
+            <x>380</x>
+            <y>320</y>
+            <width>51</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>6800원</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_190">
+          <property name="geometry">
+           <rect>
+            <x>380</x>
+            <y>150</y>
+            <width>51</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>5700원</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_191">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>320</y>
+            <width>51</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Papyrus</family>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>5500원</string>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_pay">
+     <attribute name="title">
+      <string>Pay</string>
+     </attribute>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>30</y>
+        <width>691</width>
+        <height>651</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="page_pay1">
+       <widget class="QTextBrowser" name="textBrowser">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>80</y>
+          <width>601</width>
+          <height>241</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_152">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>360</y>
+          <width>291</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Futura</family>
+          <pointsize>36</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>총 결제 금액     ₩                                     </string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="total_money1">
+        <property name="geometry">
+         <rect>
+          <x>370</x>
+          <y>360</y>
+          <width>251</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>36</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Btn_cancel1">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>540</y>
+          <width>221</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>American Typewriter</family>
+          <pointsize>24</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>cancel</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Btn_pay_next1">
+        <property name="geometry">
+         <rect>
+          <x>340</x>
+          <y>540</y>
+          <width>221</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>American Typewriter</family>
+          <pointsize>24</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>next</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_pay2">
+       <widget class="QLabel" name="label_156">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>460</y>
+          <width>351</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Futura</family>
+          <pointsize>36</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string> 총 결제금액         ₩               </string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="total_money2">
+        <property name="geometry">
+         <rect>
+          <x>420</x>
+          <y>460</y>
+          <width>181</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>American Typewriter</family>
+          <pointsize>36</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_155">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>390</y>
+          <width>621</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Futura</family>
+          <pointsize>24</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>결제 오류시, 마그네틱이 아래로 향하게 긁어 주세요</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_154">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>60</y>
+          <width>481</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Futura</family>
+          <pointsize>36</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>사용카드를 투입구에 꽂아주세요</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Btn_pay_next2">
+        <property name="geometry">
+         <rect>
+          <x>370</x>
+          <y>560</y>
+          <width>221</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>American Typewriter</family>
+          <pointsize>24</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>next</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Btn_cancel2">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>560</y>
+          <width>221</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>American Typewriter</family>
+          <pointsize>24</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>cancel</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_4">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>130</y>
+          <width>281</width>
+          <height>261</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>../결제.png</pixmap>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_pay3">
+       <widget class="QPushButton" name="Btn_close">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>500</y>
+          <width>221</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>American Typewriter</family>
+          <pointsize>24</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Close</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_159">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>340</y>
+          <width>321</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Futura</family>
+          <pointsize>24</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>이용해 주셔서 감사합니다. </string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>130</y>
+          <width>331</width>
+          <height>211</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>../주문완료.png</pixmap>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_157">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>30</y>
+          <width>431</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Futura</family>
+          <pointsize>48</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>주문이 완료되었습니다</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_160">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>380</y>
+          <width>321</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Futura</family>
+          <pointsize>24</pointsize>
+          <italic>false</italic>
+         </font>
+        </property>
+        <property name="text">
+         <string>출력된 영수증을 받아가세요</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
